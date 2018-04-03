@@ -3,6 +3,7 @@ require 'json'
 package = JSON.parse(File.read(File.join(__dir__, 'package.json')))
 
 Pod::Spec.new do |s|
+  s.static_framework    = true
   s.name                = 'ReactNativeFBAds'
   s.version             = package['version']
   s.summary             = package['description']
@@ -15,7 +16,7 @@ Pod::Spec.new do |s|
   s.platform              = :ios, '9.0'
   s.ios.deployment_target = '8.0'
 
-  s.dependency 'React'
+#   s.dependency 'React'
   s.dependency 'FBAudienceNetwork'
   s.pod_target_xcconfig = { 'FRAMEWORK_SEARCH_PATHS' => '${PODS_ROOT}/FBAudienceNetwork/**' }
 
