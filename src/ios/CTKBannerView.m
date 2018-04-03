@@ -39,6 +39,7 @@
                                         rootViewController:RCTPresentedViewController()];
   
   adView.frame = CGRectMake(0, 0, adView.bounds.size.width, adView.bounds.size.height);
+  adView.autoresizingMask = UIViewAutoresizingFlexibleWidth;
   adView.delegate = self;
   
   [adView loadAd];
