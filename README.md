@@ -50,14 +50,17 @@ react-native-fbads [![npm version](https://badge.fury.io/js/react-native-fbads.s
 Install JavaScript packages:
 
 ```bash
-$ react-native install react-native-fbads
+$ react-native install react-native-facebook-ads
 ```
 ##### RN < 0.40
 Install JavaScript packages:
 
 ```bash
-$ react-native install react-native-fbads@3.1.1
+$ react-native install react-native-facebook-ads@4.2.3
 ```
+
+##### Note: 
+If you got error when building iOS project, you can try installing the library manually as the instruction here: https://facebook.github.io/react-native/docs/linking-libraries-ios.html. After installing the library, you have to remove the line `pod 'ReactNativeFBAds', :path => '../node_modules/react-native-fbads'` inside Podfile.
 
 ### 2. Configure native projects
 
