@@ -64,7 +64,7 @@ If you got error when building iOS project, you can try installing the library m
 
 ### 2. Configure native projects
 
-The react-native-fbads has been automatically linked for you, the next step will be downloading and linking the native Facebook SDK for both platforms.
+The react-native-facebook-ads has been automatically linked for you, the next step will be downloading and linking the native Facebook SDK for both platforms.
 
 #### 2.1 iOS
 
@@ -93,7 +93,7 @@ They are displayed over your root view with a single, imperative call.
 In order to show an ad, you have to import `InterstitialAdManager` and call `showAd` on it supplying it a placementId identifier, as in the below example:
 
 ```js
-import { InterstitialAdManager } from 'react-native-fbads';
+import { InterstitialAdManager } from 'react-native-facebook-ads';
 
 InterstitialAdManager.showAd(placementId)
   .then(didClick => {})
@@ -114,7 +114,7 @@ In order to start rendering your custom native ads within your app, you have to 
 a `NativeAdManager` that is responsible for caching and fetching ads as you request them.
 
 ```js
-import { NativeAdsManager } from 'react-native-fbads';
+import { NativeAdsManager } from 'react-native-facebook-ads';
 
 const adsManager = new NativeAdsManager(placementId, numberOfAdsToRequest);
 ```
@@ -178,7 +178,7 @@ Banners are available in 3 sizes:
 In order to show an ad, you have to first import it `BannerView` from the package:
 
 ```js
-import { BannerView } from 'react-native-fbads';
+import { BannerView } from 'react-native-facebook-ads';
 ```
 
 Later in your app, you can render it like below:
@@ -225,7 +225,7 @@ adsManager.setMediaCachePolicy('none' | 'icon' | 'image' | 'all');
 ### InterstitialAdManager
 
 ```js
-import { InterstitialAdManager } from 'react-native-fbads';
+import { InterstitialAdManager } from 'react-native-facebook-ads';
 ```
 
 InterstitialAdManager is a manager that allows you to display interstitial ads within your app with a single call.
@@ -256,7 +256,7 @@ On Android you have to add following activity to *AndroidManifest.xml*
 ### AdSettings
 
 ```js
-import { AdSettings } from 'react-native-fbads';
+import { AdSettings } from 'react-native-facebook-ads';
 ```
 
 AdSettings contains global settings for all ad controls.
