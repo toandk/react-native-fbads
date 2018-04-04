@@ -56,7 +56,7 @@ $ react-native install react-native-facebook-ads
 Install JavaScript packages:
 
 ```bash
-$ react-native install react-native-facebook-ads@4.2.3
+$ react-native install react-native-facebook-ads@4.2.4
 ```
 
 ##### Note: 
